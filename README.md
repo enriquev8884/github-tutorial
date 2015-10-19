@@ -7,8 +7,15 @@ _by Enrique Vivar_
 ###Git: _Version control: Keeps "snapshots" of code_
 * Does not require Github
 * Used to :  
- * 
+ * edit files
+ * add files
+ * commit them  
 
+###Github:
+* stores code in a cloud
+* visually tracks changes
+* easily collaborate on files
+* requires git
 
 
 ---
