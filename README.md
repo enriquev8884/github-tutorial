@@ -20,13 +20,26 @@ _by Enrique Vivar_
 
 ---
 ## Initial Setup  
-  Once a github account is created, you would have to connect your account _[cloud]_,
- to your terminal _[C9]_
+  ####Once a github account is created, you would have to connect your account _[cloud]_,
+ to your terminal _[C9]_  
 1. Create a c9 account  
-2. Go to sttings and click on SSH Keys  
+2. Go to settings and click on SSH Keys  
 3. Copy the SSH Key  
-4. Head over to your Github.com account  
-![pic](SSH-Keys.png)
+4. Head over to your Github.com account   
+5. Go to settings  
+6. Click on tab named SSH Keys  
+7. Click on add SSH Keys  
+![pic](SSH-Keys.png)  
+8. Add a title, paste the SSH Key 
+9. Save!
+
+
+  ####Once saved, you'll also need an identity for your work. With `git config` 
+  you will need to create a username and add an e-mail.
+  
+  
+
+ 
 ---
 ## Repository Setup
 
