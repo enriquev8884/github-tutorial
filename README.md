@@ -33,9 +33,7 @@ _by Enrique Vivar_
 8. Add a title, paste the SSH Key 
 9. Save!
 
-
-  ####Once saved, you'll also need an identity for your work. With `git config` 
-  you will need to create a username and add an e-mail.
+####Once saved, you'll also need an identity for your work. With `git config` you will need to create a username and add an e-mail.
   
   
 
