@@ -12,15 +12,17 @@ _by Enrique Vivar_
  * commit them  
 
 ###Github:
-* stores code in a cloud
-* visually tracks changes
+* stores code in a cloud _(github.com)_
+* able to tracks changes
 * easily collaborate on files
-* requires git
+* requires git 
+* runs in the command line
 
-
+![pic](SSH-Keys.png)
 ---
-## Initial Setup
-
+## Initial Setup  
+  Once a github account is created, you would have to connect your account _[cloud]_,
+  to your terminal _[C9]_
 
 
 ---
