@@ -18,13 +18,12 @@ _by Enrique Vivar_
 * requires git 
 * runs in the command line
 
-![pic](SSH-Keys.png)
 ---
 ## Initial Setup  
   Once a github account is created, you would have to connect your account _[cloud]_,
-  to your terminal _[C9]_
+ to your terminal _[C9]_
 
-
+![pic](SSH-Keys.png)
 ---
 ## Repository Setup
 
