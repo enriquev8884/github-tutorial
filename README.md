@@ -34,9 +34,11 @@ _by Enrique Vivar_
 
 ####Once saved, you'll also need an identity for your work. With `git config` you will need to create a username and add an e-mail.
   
-  
-
- 
+```
+git config --global user.name` _John Smith_  
+git config --global user.email` _john.smith@example.com_  
+```
+  With that you set your identity up, you're all good to go
 ---
 ## Repository Setup
 
