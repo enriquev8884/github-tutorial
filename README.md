@@ -27,8 +27,7 @@ _by Enrique Vivar_
 4. Head over to your Github.com account   
 5. Go to settings  
 6. Click on tab named SSH Keys  
-7. Click on add SSH Keys  
-![pic](SSH-Keys.png)  
+7. Click on add SSH Keys    
 8. Add a title, paste the SSH Key 
 9. Save!
 
@@ -60,5 +59,10 @@ _by Enrique Vivar_
 ####Now that we have a repository, head to github.com and sign in.
 
 ![pic](github-repo.png)
+
+1. Copy SSH Key and head back c9
+2. Type `git remote add origin SSH Key` (SSH Key being the one you copied)
+3. Then enter `git push -u origin master`
+4. Now you're ready to work
 ---
 ## Workflow & Commands
