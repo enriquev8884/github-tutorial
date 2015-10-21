@@ -67,3 +67,14 @@ _by Enrique Vivar_
 
 ---
 ## Workflow & Commands
+
+*  <span style="color:red;"> `mkdir directory.name` </span> <span style="color:grey;"> creates directory </span>
+*  <span style="color:red;"> `cd` </span> <span style="color:grey;"> used to go in or out of repositories </span>
+*  <span style="color:red;"> `git init` </span> <span style="color:grey;"> makes directory into a repository </span>
+*  <span style="color:red;"> `git help` </span> <span style="color:grey;"> used to explain commands </span>
+*  <span style="color:red;"> `git status` </span> <span style="color:grey;"> to see what files are ready to be commited </span>
+*  <span style="color:red;"> `git diff` </span> <span style="color:grey;"> see difference between current code and previous commit </span>
+*  <span style="color:red;"> `git add` </span> <span style="color:grey;"> adds new or changed files </span>
+*  <span style="color:red;"> `git commit -m` </span> <span style="color:grey;"> prepares files to get pushed </span>
+*  <span style="color:red;"> `git push` </span> <span style="color:grey;"> sends commits to remote repo </span>
+*  <span style="color:red;"> `git pull` </span> <span style="color:grey;"> any changes on remote repo are brought down </span>
