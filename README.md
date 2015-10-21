@@ -35,15 +35,18 @@ _by Enrique Vivar_
 ####Once saved, you'll also need an identity for your work. With `git config` you will need to create a username and add an e-mail.
   
 
-`git config --global user.name` _John Smith_  
-`git config --global user.email` _john.smith@example.com_  
+`git config --global user.name`  
+#####_user.name being desired name_
+`git config --global user.email` 
+#####_user.email is e-mail_
 
 ####With that you set your identity up, you're all good to go
 ---
 ## Repository Setup
 
 ####To start off, you will need to create a directory;
-   `mkdir directory.name` _practice_    
+   `mkdir directory.name`   
+#####_directory.name being what you want_
   
 ####With your new directory you will have to `cd` into it; 
    `cd directory.name`
