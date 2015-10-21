@@ -34,15 +34,28 @@ _by Enrique Vivar_
 
 ####Once saved, you'll also need an identity for your work. With `git config` you will need to create a username and add an e-mail.
   
-```
-git config --global user.name` _John Smith_  
-git config --global user.email` _john.smith@example.com_  
-```
-  With that you set your identity up, you're all good to go
+
+`git config --global user.name` _John Smith_  
+`git config --global user.email` _john.smith@example.com_  
+
+####With that you set your identity up, you're all good to go
 ---
 ## Repository Setup
 
+####To start off, you will need to create a directory;
+   `mkdir directory.name` _practice_    
+  
+####With your new directory you will have to `cd` into it; 
+   `cd directory.name`
 
+####Within the directory, its recommended to create a README.md file;
+   `touch README.md`
 
+####Once the README.md is made, we can initialize it;
+   `git init`
+   
+####Now that we have a repository, head to github.com and sign in.
+
+![pic](github-repo.png)
 ---
 ## Workflow & Commands
