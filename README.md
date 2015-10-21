@@ -64,5 +64,6 @@ _by Enrique Vivar_
 2. Type `git remote add origin SSH Key` (SSH Key being the one you copied)
 3. Then enter `git push -u origin master`
 4. Now you're ready to work
+
 ---
 ## Workflow & Commands
