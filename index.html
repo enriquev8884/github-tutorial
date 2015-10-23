@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>GitHub Tutorial by enriquev8884</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/enriquev8884/github-tutorial">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>GitHub Tutorial</h1>
+            <h2>Learning the basics</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/enriquev8884/github-tutorial/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/enriquev8884/github-tutorial/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Enrique Vivar</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<h3>
+<a id="git-version-control-keeps-snapshots-of-code" class="anchor" href="#git-version-control-keeps-snapshots-of-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git: <em>Version control: Keeps "snapshots" of code</em>
+</h3>
+
+<ul>
+<li>Does not require Github</li>
+<li>Used to :<br>
+
+<ul>
+<li>edit files</li>
+<li>add files</li>
+<li>commit them<br>
+</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="github" class="anchor" href="#github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github:</h3>
+
+<ul>
+<li>stores code in a cloud <em>(github.com)</em>
+</li>
+<li>able to tracks changes</li>
+<li>easily collaborate on files</li>
+<li>requires git </li>
+<li>runs in the command line</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h4>
+<a id="once-a-github-account-is-created-you-would-have-to-connect-your-account-cloud-to-your-terminal-c9" class="anchor" href="#once-a-github-account-is-created-you-would-have-to-connect-your-account-cloud-to-your-terminal-c9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Once a github account is created, you would have to connect your account <em>[cloud]</em>, to your terminal <em>[C9]</em>
+</h4>
+
+<ol>
+<li>Create a c9 account<br>
+</li>
+<li>Go to settings and click on SSH Keys<br>
+</li>
+<li>Copy the SSH Key<br>
+</li>
+<li>Head over to your Github.com account<br>
+</li>
+<li>Go to settings<br>
+</li>
+<li>Click on tab named SSH Keys<br>
+</li>
+<li>Click on add SSH Keys<br>
+</li>
+<li>Add a title, paste the SSH Key </li>
+<li>Save!</li>
+</ol>
+
+<h4>
+<a id="once-saved-youll-also-need-an-identity-for-your-work-with-git-config-you-will-need-to-create-a-username-and-add-an-e-mail" class="anchor" href="#once-saved-youll-also-need-an-identity-for-your-work-with-git-config-you-will-need-to-create-a-username-and-add-an-e-mail" aria-hidden="true"><span class="octicon octicon-link"></span></a>Once saved, you'll also need an identity for your work. With <code>git config</code> you will need to create a username and add an e-mail.</h4>
+
+<p><code>git config --global user.name</code>  </p>
+
+<h5>
+<a id="username-being-desired-name" class="anchor" href="#username-being-desired-name" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>user.name being desired name</em>
+</h5>
+
+<p><code>git config --global user.email</code> </p>
+
+<h5>
+<a id="useremail-is-e-mail" class="anchor" href="#useremail-is-e-mail" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>user.email is e-mail</em>
+</h5>
+
+<h4>
+<a id="with-that-you-set-your-identity-up-youre-all-good-to-go" class="anchor" href="#with-that-you-set-your-identity-up-youre-all-good-to-go" aria-hidden="true"><span class="octicon octicon-link"></span></a>With that you set your identity up, you're all good to go</h4>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<h4>
+<a id="to-start-off-you-will-need-to-create-a-directory" class="anchor" href="#to-start-off-you-will-need-to-create-a-directory" aria-hidden="true"><span class="octicon octicon-link"></span></a>To start off, you will need to create a directory;</h4>
+
+<p><code>mkdir directory.name</code>   </p>
+
+<h5>
+<a id="directoryname-being-what-you-want" class="anchor" href="#directoryname-being-what-you-want" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>directory.name being what you want</em>
+</h5>
+
+<h4>
+<a id="with-your-new-directory-you-will-have-to-cd-into-it" class="anchor" href="#with-your-new-directory-you-will-have-to-cd-into-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>With your new directory you will have to <code>cd</code> into it;</h4>
+
+<p><code>cd directory.name</code></p>
+
+<h4>
+<a id="within-the-directory-its-recommended-to-create-a-readmemd-file" class="anchor" href="#within-the-directory-its-recommended-to-create-a-readmemd-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>Within the directory, its recommended to create a README.md file;</h4>
+
+<p><code>touch README.md</code></p>
+
+<h4>
+<a id="once-the-readmemd-is-made-we-can-initialize-it" class="anchor" href="#once-the-readmemd-is-made-we-can-initialize-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Once the README.md is made, we can initialize it;</h4>
+
+<p><code>git init</code></p>
+
+<h4>
+<a id="now-that-we-have-a-repository-head-to-githubcom-and-sign-in" class="anchor" href="#now-that-we-have-a-repository-head-to-githubcom-and-sign-in" aria-hidden="true"><span class="octicon octicon-link"></span></a>Now that we have a repository, head to github.com and sign in.</h4>
+
+<p><img src="github-repo.png" alt="pic"></p>
+
+<ol>
+<li>Copy SSH Key and head back c9</li>
+<li>Type <code>git remote add origin SSH Key</code> (SSH Key being the one you copied)</li>
+<li>Then enter <code>git push -u origin master</code>
+</li>
+<li>Now you're ready to work</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<ul>
+<li>  <code>mkdir directory.name</code>   creates directory </li>
+<li>  <code>cd</code>   used to go in or out of repositories </li>
+<li>  <code>git init</code>   makes directory into a repository </li>
+<li>  <code>git help</code>   used to explain commands </li>
+<li>  <code>git status</code>   to see what files are ready to be commited </li>
+<li>  <code>git diff</code>   see difference between current code and previous commit </li>
+<li>  <code>git add</code>   adds new or changed files </li>
+<li>  <code>git commit -m</code>   prepares files to get pushed </li>
+<li>  <code>git push</code>   sends commits to remote repo </li>
+<li>  <code>git pull</code>   any changes on remote repo are brought down </li>
+</ul>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/enriquev8884">enriquev8884</a> can be found on <a href="https://github.com/enriquev8884/github-tutorial">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
